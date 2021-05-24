@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:paddingLeft="20dp"
+            android:id="@+id/edtCorreo"
+            android:hint="Correo electronico"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            />
+
+        <EditText
+            android:paddingLeft="20dp"
+            android:id="@+id/edtpass"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/edtCorreo"
+            android:hint="Contraseña"
+            android:background="@drawable/shape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/txtContraseña"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edtpass"
+            android:textColor="@color/black"
+            android:text="¿Olvidaste tu contraseña?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtCrearCuenta"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/txtContraseña"
+            android:text="Crear cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:text="Ingresar"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txtCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/separacion"
+            android:layout_below="@id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_marginTop="12dp"
+                android:id="@+id/linea1"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ó"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_marginTop="12dp"
+                android:layout_width="160dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/separacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:src="@drawable/icon_facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:src="@drawable/icon_apple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:src="@drawable/icon_google"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
